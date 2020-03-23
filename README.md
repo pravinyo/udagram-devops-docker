@@ -6,6 +6,7 @@ Udagram is a simple cloud application developed alongside the Udacity Cloud Engi
 
 ### Setup Docker Environment
 Open a new terminal within the project directory and run:
+
 0. Load the configuration profile
 1. Build the images: `docker-compose -f docker-compose-build.yaml build --parallel`
 2. Push the images: `docker-compose -f docker-compose-build.yaml push`
