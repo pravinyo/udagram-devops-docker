@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: pravinyo/udagram-reverseproxy
+  backend_user:
+    build:
+      context: ../../restapi-user
+    image: pravinyo/udagram-restapi-user:all_access
+  backend_feed:
+    build:
+      context: ../../restapi-feed  
+    image: pravinyo/udagram-restapi-user:all_access
+  frontend:
+    build:
+      context: ../../frontend  
+    image: pravinyo/udagram-frontend
